@@ -7,8 +7,11 @@ package searchsort;
  */
 public class Main {
     public static void main(String[] args) {
-        int[] testArr = {1, 2, 3, 4, 5};
-        BinarySearch search = new BinarySearch();
-        System.out.println(search.find(testArr, 3));
+        int[] arr = { 1, 2, 3, 4, 5 };
+        int[] result = Util.shuffle(arr, null);
+        for(int i = 0; i < result.length; i++)
+        {
+            System.out.println(arr[i]);
+        }
     }
 }

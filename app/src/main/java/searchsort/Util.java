@@ -19,7 +19,7 @@ public class Util {
             int j = random.nextInt(i+1);
              
             // Swap arr[i] with the element at random index
-            exch(arr, arr[i], arr[j]);
+            exch(arr, i, j);
         }
         return arr;
     }
@@ -27,7 +27,7 @@ public class Util {
     /**
      * Exchange the elements at indices i and j in the array arr.
      */
-    public static void exch(int[] arr, int i, int j) {
+    public static void exch(int[] arr, int i, int j){
         int value = arr[i];
         arr[i] = arr[j];
         arr[j] = value; 
@@ -39,10 +39,14 @@ public class Util {
     public static int[] generateRandomArray(int n, Long seed) {
         // Create a new integer array of size n
         int[] arr = new int[n];
+        for(int i = 0; i < n-1; i++)
+        {
+            arr[i] = i;
+        }
         // Shuffle the array using the Shuffle method with the given seed
         shuffle(arr, seed);
         // Return the shuffled array
-        return new int[n];
+        return arr;
     }
 
     /**
