@@ -55,7 +55,7 @@ public class Util {
     public static int[] generateRandomArray(int n, Long seed) {
         // Create a new integer array of size n
         int[] arr = new int[n];
-        for(int i = 0; i < n-1; i++)
+        for(int i = 0; i < n; i++)
         {
             arr[i] = i;
         }

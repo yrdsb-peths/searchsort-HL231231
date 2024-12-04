@@ -14,7 +14,9 @@ public class Median {
         {
             return 0;
         }
-        return 0;
+        QuickSort sorter = new QuickSort();
+        sorter.sort(arr);
+        return arr[(0 + arr.length)/2];
     }
 
     /**
@@ -25,7 +27,9 @@ public class Median {
         {
             return 0;
         }
-        return 0;
+        MergeSort sorter = new MergeSort();
+        sorter.sort(arr);
+        return arr[(0 + arr.length)/2];
     }
 
     /**
@@ -36,8 +40,7 @@ public class Median {
         {
             return 0;
         }
-        InsertionSort sorter = new InsertionSort();
-        sorter.sort(arr);
+        InsertionSort.sort(arr);
         return arr[(0 + arr.length)/2];
     }
 

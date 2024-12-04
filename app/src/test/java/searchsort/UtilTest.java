@@ -35,7 +35,7 @@ public class UtilTest {
         assert result[1] == 2;
         assert result[2] == 3;
         assert result[3] == 4;
-        assert result[4] == 5;
+        assert result[4] == 5; 
     }
 
     @Test
